@@ -13,9 +13,8 @@
 - (id)initWithSampleCount:(NSInteger)count rate:(NSInteger)rate frequency:(float)freq {
   if ((self = [super init])) {
     frequency = freq;
-    for (int i = 0; i < 3; i++) {
-      workspace[i] = malloc(4 * count);
-    }
+    workspace[0] = malloc(4 * count);
+    workspace[1] = malloc(4 * count);
     bufferCount = count;
     
     phase = 0;

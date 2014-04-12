@@ -11,7 +11,7 @@
 #import "ANWaveGenerator.h"
 
 @interface ANSineGenerator : NSObject <ANWaveGenerator> {
-  Float32 * workspace[3];
+  Float32 * workspace[2];
   NSInteger bufferCount;
   
   float phase;
