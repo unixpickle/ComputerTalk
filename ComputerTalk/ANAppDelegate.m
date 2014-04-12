@@ -10,9 +10,12 @@
 
 @implementation ANAppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-    // Insert code here to initialize your application
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+  // Insert code here to initialize your application
+  gen = [[ANSoundWaveEmitter alloc] initWithSampleRate:44100 bufferTime:0.5];
+  [gen start];
+  [gen addWave:1000];
+  [gen addWave:2000];
 }
 
 @end

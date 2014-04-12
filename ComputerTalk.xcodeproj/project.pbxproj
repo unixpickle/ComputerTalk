@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA40A98418F9ED2E00B720BF /* ANWaveAdder.m in Sources */ = {isa = PBXBuildFile; fileRef = FA40A98318F9ED2E00B720BF /* ANWaveAdder.m */; };
 		FAD0ADC218F99337007FBC25 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD0ADC118F99337007FBC25 /* Cocoa.framework */; };
 		FAD0ADCC18F99337007FBC25 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAD0ADCA18F99337007FBC25 /* InfoPlist.strings */; };
 		FAD0ADCE18F99337007FBC25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD0ADCD18F99337007FBC25 /* main.m */; };
@@ -14,23 +15,16 @@
 		FAD0ADD518F99337007FBC25 /* ANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD0ADD418F99337007FBC25 /* ANAppDelegate.m */; };
 		FAD0ADD818F99337007FBC25 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD0ADD618F99337007FBC25 /* MainMenu.xib */; };
 		FAD0ADDA18F99337007FBC25 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD0ADD918F99337007FBC25 /* Images.xcassets */; };
-		FAD0ADE118F99337007FBC25 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD0ADE018F99337007FBC25 /* XCTest.framework */; };
-		FAD0ADE218F99337007FBC25 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD0ADC118F99337007FBC25 /* Cocoa.framework */; };
-		FAD0ADEA18F99337007FBC25 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAD0ADE818F99337007FBC25 /* InfoPlist.strings */; };
-		FAD0ADEC18F99337007FBC25 /* ComputerTalkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD0ADEB18F99337007FBC25 /* ComputerTalkTests.m */; };
+		FAD0ADF818F993AF007FBC25 /* ANSoundWaveEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD0ADF718F993AF007FBC25 /* ANSoundWaveEmitter.m */; };
+		FAD0ADFA18F993CD007FBC25 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD0ADF918F993CD007FBC25 /* AudioToolbox.framework */; };
+		FAD0ADFD18F998F6007FBC25 /* ANSineGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD0ADFC18F998F6007FBC25 /* ANSineGenerator.m */; };
+		FAD0ADFF18F9A028007FBC25 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD0ADFE18F9A028007FBC25 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FAD0ADE318F99337007FBC25 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FAD0ADB618F99336007FBC25 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FAD0ADBD18F99337007FBC25;
-			remoteInfo = ComputerTalk;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		FA40A98118F9ECF400B720BF /* ANWaveGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANWaveGenerator.h; sourceTree = "<group>"; };
+		FA40A98218F9ED2E00B720BF /* ANWaveAdder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANWaveAdder.h; sourceTree = "<group>"; };
+		FA40A98318F9ED2E00B720BF /* ANWaveAdder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANWaveAdder.m; sourceTree = "<group>"; };
 		FAD0ADBE18F99337007FBC25 /* ComputerTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComputerTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD0ADC118F99337007FBC25 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FAD0ADC418F99337007FBC25 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -45,11 +39,13 @@
 		FAD0ADD418F99337007FBC25 /* ANAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANAppDelegate.m; sourceTree = "<group>"; };
 		FAD0ADD718F99337007FBC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		FAD0ADD918F99337007FBC25 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FAD0ADDF18F99337007FBC25 /* ComputerTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComputerTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD0ADE018F99337007FBC25 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		FAD0ADE718F99337007FBC25 /* ComputerTalkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ComputerTalkTests-Info.plist"; sourceTree = "<group>"; };
-		FAD0ADE918F99337007FBC25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FAD0ADEB18F99337007FBC25 /* ComputerTalkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComputerTalkTests.m; sourceTree = "<group>"; };
+		FAD0ADF618F993AF007FBC25 /* ANSoundWaveEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSoundWaveEmitter.h; sourceTree = "<group>"; };
+		FAD0ADF718F993AF007FBC25 /* ANSoundWaveEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSoundWaveEmitter.m; sourceTree = "<group>"; };
+		FAD0ADF918F993CD007FBC25 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FAD0ADFB18F998F6007FBC25 /* ANSineGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSineGenerator.h; sourceTree = "<group>"; };
+		FAD0ADFC18F998F6007FBC25 /* ANSineGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSineGenerator.m; sourceTree = "<group>"; };
+		FAD0ADFE18F9A028007FBC25 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,16 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD0ADFF18F9A028007FBC25 /* Accelerate.framework in Frameworks */,
+				FAD0ADFA18F993CD007FBC25 /* AudioToolbox.framework in Frameworks */,
 				FAD0ADC218F99337007FBC25 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAD0ADDC18F99337007FBC25 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAD0ADE218F99337007FBC25 /* Cocoa.framework in Frameworks */,
-				FAD0ADE118F99337007FBC25 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +65,8 @@
 		FAD0ADB518F99336007FBC25 = {
 			isa = PBXGroup;
 			children = (
+				FAD0ADF518F99357007FBC25 /* ANSoundWaveEmitter */,
 				FAD0ADC718F99337007FBC25 /* ComputerTalk */,
-				FAD0ADE518F99337007FBC25 /* ComputerTalkTests */,
 				FAD0ADC018F99337007FBC25 /* Frameworks */,
 				FAD0ADBF18F99337007FBC25 /* Products */,
 			);
@@ -87,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				FAD0ADBE18F99337007FBC25 /* ComputerTalk.app */,
-				FAD0ADDF18F99337007FBC25 /* ComputerTalkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +83,8 @@
 		FAD0ADC018F99337007FBC25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAD0ADFE18F9A028007FBC25 /* Accelerate.framework */,
+				FAD0ADF918F993CD007FBC25 /* AudioToolbox.framework */,
 				FAD0ADC118F99337007FBC25 /* Cocoa.framework */,
 				FAD0ADE018F99337007FBC25 /* XCTest.framework */,
 				FAD0ADC318F99337007FBC25 /* Other Frameworks */,
@@ -136,22 +126,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FAD0ADE518F99337007FBC25 /* ComputerTalkTests */ = {
+		FAD0ADF518F99357007FBC25 /* ANSoundWaveEmitter */ = {
 			isa = PBXGroup;
 			children = (
-				FAD0ADEB18F99337007FBC25 /* ComputerTalkTests.m */,
-				FAD0ADE618F99337007FBC25 /* Supporting Files */,
+				FAD0ADF618F993AF007FBC25 /* ANSoundWaveEmitter.h */,
+				FAD0ADF718F993AF007FBC25 /* ANSoundWaveEmitter.m */,
+				FA40A98218F9ED2E00B720BF /* ANWaveAdder.h */,
+				FA40A98318F9ED2E00B720BF /* ANWaveAdder.m */,
+				FAD0ADFB18F998F6007FBC25 /* ANSineGenerator.h */,
+				FAD0ADFC18F998F6007FBC25 /* ANSineGenerator.m */,
+				FA40A98118F9ECF400B720BF /* ANWaveGenerator.h */,
 			);
-			path = ComputerTalkTests;
-			sourceTree = "<group>";
-		};
-		FAD0ADE618F99337007FBC25 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FAD0ADE718F99337007FBC25 /* ComputerTalkTests-Info.plist */,
-				FAD0ADE818F99337007FBC25 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
+			path = ANSoundWaveEmitter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,24 +160,6 @@
 			productReference = FAD0ADBE18F99337007FBC25 /* ComputerTalk.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FAD0ADDE18F99337007FBC25 /* ComputerTalkTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FAD0ADF218F99337007FBC25 /* Build configuration list for PBXNativeTarget "ComputerTalkTests" */;
-			buildPhases = (
-				FAD0ADDB18F99337007FBC25 /* Sources */,
-				FAD0ADDC18F99337007FBC25 /* Frameworks */,
-				FAD0ADDD18F99337007FBC25 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FAD0ADE418F99337007FBC25 /* PBXTargetDependency */,
-			);
-			name = ComputerTalkTests;
-			productName = ComputerTalkTests;
-			productReference = FAD0ADDF18F99337007FBC25 /* ComputerTalkTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,11 +169,6 @@
 				CLASSPREFIX = AN;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Alex Nichol";
-				TargetAttributes = {
-					FAD0ADDE18F99337007FBC25 = {
-						TestTargetID = FAD0ADBD18F99337007FBC25;
-					};
-				};
 			};
 			buildConfigurationList = FAD0ADB918F99336007FBC25 /* Build configuration list for PBXProject "ComputerTalk" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -221,7 +184,6 @@
 			projectRoot = "";
 			targets = (
 				FAD0ADBD18F99337007FBC25 /* ComputerTalk */,
-				FAD0ADDE18F99337007FBC25 /* ComputerTalkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,14 +200,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAD0ADDD18F99337007FBC25 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAD0ADEA18F99337007FBC25 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -254,27 +208,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD0ADCE18F99337007FBC25 /* main.m in Sources */,
+				FA40A98418F9ED2E00B720BF /* ANWaveAdder.m in Sources */,
+				FAD0ADFD18F998F6007FBC25 /* ANSineGenerator.m in Sources */,
+				FAD0ADF818F993AF007FBC25 /* ANSoundWaveEmitter.m in Sources */,
 				FAD0ADD518F99337007FBC25 /* ANAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAD0ADDB18F99337007FBC25 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAD0ADEC18F99337007FBC25 /* ComputerTalkTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FAD0ADE418F99337007FBC25 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FAD0ADBD18F99337007FBC25 /* ComputerTalk */;
-			targetProxy = FAD0ADE318F99337007FBC25 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FAD0ADCA18F99337007FBC25 /* InfoPlist.strings */ = {
@@ -299,14 +240,6 @@
 				FAD0ADD718F99337007FBC25 /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		FAD0ADE818F99337007FBC25 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAD0ADE918F99337007FBC25 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -406,46 +339,6 @@
 			};
 			name = Release;
 		};
-		FAD0ADF318F99337007FBC25 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ComputerTalk.app/Contents/MacOS/ComputerTalk";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComputerTalk/ComputerTalk-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ComputerTalkTests/ComputerTalkTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		FAD0ADF418F99337007FBC25 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ComputerTalk.app/Contents/MacOS/ComputerTalk";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComputerTalk/ComputerTalk-Prefix.pch";
-				INFOPLIST_FILE = "ComputerTalkTests/ComputerTalkTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -465,14 +358,7 @@
 				FAD0ADF118F99337007FBC25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		FAD0ADF218F99337007FBC25 /* Build configuration list for PBXNativeTarget "ComputerTalkTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAD0ADF318F99337007FBC25 /* Debug */,
-				FAD0ADF418F99337007FBC25 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
