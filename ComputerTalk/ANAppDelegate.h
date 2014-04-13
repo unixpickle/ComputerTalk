@@ -9,11 +9,13 @@
 #import <Cocoa/Cocoa.h>
 #import "ANSoundWaveEmitter.h"
 #import "ANSineGenerator.h"
+#import "ANSoundWaveReceiver.h"
 
 @interface ANAppDelegate : NSObject <NSApplicationDelegate> {
   ANSoundWaveEmitter * gen;
+  ANSoundWaveReceiver * rec;
 }
 
-@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSWindow * window;
 
 @end

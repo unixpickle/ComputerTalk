@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FA40A98418F9ED2E00B720BF /* ANWaveAdder.m in Sources */ = {isa = PBXBuildFile; fileRef = FA40A98318F9ED2E00B720BF /* ANWaveAdder.m */; };
 		FA40A98818F9F14500B720BF /* ANSoundWaveReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = FA40A98718F9F14500B720BF /* ANSoundWaveReceiver.m */; };
+		FAC8D10318FB228500C1B64D /* ANFrequencyTable.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8D10218FB228500C1B64D /* ANFrequencyTable.m */; };
 		FAD0ADC218F99337007FBC25 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD0ADC118F99337007FBC25 /* Cocoa.framework */; };
 		FAD0ADCC18F99337007FBC25 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAD0ADCA18F99337007FBC25 /* InfoPlist.strings */; };
 		FAD0ADCE18F99337007FBC25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD0ADCD18F99337007FBC25 /* main.m */; };
@@ -28,6 +29,8 @@
 		FA40A98318F9ED2E00B720BF /* ANWaveAdder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANWaveAdder.m; sourceTree = "<group>"; };
 		FA40A98618F9F14500B720BF /* ANSoundWaveReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSoundWaveReceiver.h; sourceTree = "<group>"; };
 		FA40A98718F9F14500B720BF /* ANSoundWaveReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSoundWaveReceiver.m; sourceTree = "<group>"; };
+		FAC8D10118FB228500C1B64D /* ANFrequencyTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANFrequencyTable.h; sourceTree = "<group>"; };
+		FAC8D10218FB228500C1B64D /* ANFrequencyTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANFrequencyTable.m; sourceTree = "<group>"; };
 		FAD0ADBE18F99337007FBC25 /* ComputerTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComputerTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD0ADC118F99337007FBC25 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FAD0ADC418F99337007FBC25 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -70,6 +73,8 @@
 			children = (
 				FA40A98618F9F14500B720BF /* ANSoundWaveReceiver.h */,
 				FA40A98718F9F14500B720BF /* ANSoundWaveReceiver.m */,
+				FAC8D10118FB228500C1B64D /* ANFrequencyTable.h */,
+				FAC8D10218FB228500C1B64D /* ANFrequencyTable.m */,
 			);
 			path = ANSoundWaveReceiver;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD0ADCE18F99337007FBC25 /* main.m in Sources */,
+				FAC8D10318FB228500C1B64D /* ANFrequencyTable.m in Sources */,
 				FA40A98418F9ED2E00B720BF /* ANWaveAdder.m in Sources */,
 				FAD0ADFD18F998F6007FBC25 /* ANSineGenerator.m in Sources */,
 				FAD0ADF818F993AF007FBC25 /* ANSoundWaveEmitter.m in Sources */,
