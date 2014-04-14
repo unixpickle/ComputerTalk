@@ -24,8 +24,10 @@
                  recFreq:(float)rFreq {
   if ((self = [super init])) {
     sampleRate = aRate;
+    cbPerSecond = MIN(60, (int)(sFreq / 15.0));
+    bitDuration = 3.0f / (float)cbPerSecond;
     
-    float windowFrameSize = (float)aRate / kANSoundWaveReceiverPerSecond;
+    float windowFrameSize = (float)aRate / (float)cbPerSecond;
     int windowLog = (int)log2f(windowFrameSize);
     windowSize = 1 << windowLog;
     
@@ -64,7 +66,8 @@
   sendRest = [emitter makeWave:[self frequencyForSend:ANXferFreqRest]];
   [emitter addWave:sendRest];
   
-  receiver = [[ANSoundWaveReceiver alloc] initWithSampleRate:sampleRate];
+  receiver = [[ANSoundWaveReceiver alloc] initWithSampleRate:sampleRate
+                                                      cbRate:cbPerSecond];
   
   __weak id weakSelf = self;
   receiver.callback = ^(ANFrequencyTable * table) {
@@ -87,7 +90,7 @@
     [emitter removeWave:sendRest];
     [emitter addWave:sendData];
     [emitter addWave:flag ? sendOn : sendOff];
-    sendTimeout = [NSTimer scheduledTimerWithTimeInterval:kANXferBitDuration
+    sendTimeout = [NSTimer scheduledTimerWithTimeInterval:bitDuration
                                                    target:self
                                                  selector:@selector(_applyRest)
                                                  userInfo:nil repeats:NO];
@@ -123,7 +126,7 @@
   [emitter removeWave:sendOn];
   [emitter removeWave:sendData];
   [emitter addWave:sendRest];
-  sendTimeout = [NSTimer scheduledTimerWithTimeInterval:kANXferBitDuration
+  sendTimeout = [NSTimer scheduledTimerWithTimeInterval:bitDuration
                                                  target:self
                                                selector:@selector(_sendNextBit)
                                                userInfo:nil repeats:NO];
@@ -141,7 +144,7 @@
   [emitter removeWave:sendRest];
   [emitter addWave:sendData];
   [emitter addWave:val.boolValue ? sendOn : sendOff];
-  sendTimeout = [NSTimer scheduledTimerWithTimeInterval:kANXferBitDuration
+  sendTimeout = [NSTimer scheduledTimerWithTimeInterval:bitDuration
                                                  target:self
                                                selector:@selector(_applyRest)
                                                userInfo:nil repeats:NO];

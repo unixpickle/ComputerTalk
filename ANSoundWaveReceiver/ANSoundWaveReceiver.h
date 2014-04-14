@@ -13,7 +13,6 @@
 
 #define kANSoundWaveReceiverBufferCount 2
 #define kANSoundWaveReceiverWindowCount 16
-#define kANSoundWaveReceiverPerSecond 40.0
 
 typedef void (^ ANSoundReceiverBlock)(ANFrequencyTable * table);
 
@@ -34,7 +33,7 @@ typedef void (^ ANSoundReceiverBlock)(ANFrequencyTable * table);
 
 @property (nonatomic, copy) ANSoundReceiverBlock callback;
 
-- (id)initWithSampleRate:(NSUInteger)rate;
+- (id)initWithSampleRate:(NSUInteger)rate cbRate:(NSInteger)perSecond;
 - (void)start;
 - (void)stop;
 

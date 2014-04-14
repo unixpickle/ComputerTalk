@@ -10,8 +10,6 @@
 #import "ANSoundWaveReceiver.h"
 #import "ANSoundWaveEmitter.h"
 
-#define kANXferBitDuration 0.1
-
 typedef enum {
   ANXferFreqData,
   ANXferFreqRest,
@@ -28,6 +26,8 @@ typedef void (^ ANXferDrainBlock)();
   
   NSInteger sendIndex;
   NSInteger recIndex;
+  NSInteger cbPerSecond;
+  float bitDuration;
   
   ANSoundWaveEmitter * emitter;
   id<ANWaveGenerator> sendOn, sendOff, sendData, sendRest;

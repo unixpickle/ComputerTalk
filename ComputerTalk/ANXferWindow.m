@@ -37,6 +37,10 @@ static NSMutableArray * xferWindows = nil;
     xfer = [[ANXfer alloc] initWithSampleRate:0x10000
                                      sendFreq:fieldSendFreq.floatValue
                                       recFreq:fieldRecFreq.floatValue];
+    if (!xfer) {
+      NSRunAlertPanel(@"Invalid settings", @"Failed to create a new transfer session",
+                      @"OK", nil, nil);
+    }
     [xfer start];
     __weak id weakSelf = self;
     xfer.callback = ^(BOOL bit) {

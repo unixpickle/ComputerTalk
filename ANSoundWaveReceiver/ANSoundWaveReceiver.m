@@ -18,7 +18,7 @@ static void _sample_callback(void * inUserData, AudioQueueRef inAQ, AudioQueueBu
 
 @implementation ANSoundWaveReceiver
 
-- (id)initWithSampleRate:(NSUInteger)rate {
+- (id)initWithSampleRate:(NSUInteger)rate cbRate:(NSInteger)perSecond {
   if ((self = [super init])) {
     sampleRate = rate;
     audioFormat.mFormatID = kAudioFormatLinearPCM;
@@ -39,7 +39,7 @@ static void _sample_callback(void * inUserData, AudioQueueRef inAQ, AudioQueueBu
     }
     
     // figure out how many samples (aka frames) are in a certain quantum
-    float windowFrameSize = (float)rate / kANSoundWaveReceiverPerSecond;
+    float windowFrameSize = (float)rate / (float)perSecond;
     windowLog = (int)log2f(windowFrameSize);
     framesPerWindow = 1 << windowLog;
     framesPerBuffer = framesPerWindow * kANSoundWaveReceiverWindowCount;
