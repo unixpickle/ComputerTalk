@@ -17,6 +17,7 @@
     
     vDSP_zvmags(&res, 1, freqTable, 1, count);
     
+    // there's no need to get the actual magnitude; the square is fine
     //int countInt = (int)count;
     //vvsqrtf(freqTable, freqTable, &countInt);
   }
@@ -33,6 +34,7 @@
 
 - (NSInteger)largestFrequency {
   // TODO: find an accelerated function for this
+  // ^^ is low priority, since I never plan on using this method
   float largest = 0;
   NSInteger idx = 0;
   for (NSInteger i = 0; i < valueCount; i++) {

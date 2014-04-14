@@ -12,7 +12,8 @@
 #import "ANFrequencyTable.h"
 
 #define kANSoundWaveReceiverBufferCount 2
-#define kANSoundWaveReceiverWindowCount 8
+#define kANSoundWaveReceiverWindowCount 16
+#define kANSoundWaveReceiverPerSecond 40.0
 
 typedef void (^ ANSoundReceiverBlock)(ANFrequencyTable * table);
 

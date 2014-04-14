@@ -70,20 +70,22 @@ static void _sample_callback(void * inUserData, AudioQueueRef inAQ, AudioQueueBu
 
 - (void)stop {
   AudioQueueReset(audioQueue);
-  AudioQueueStop(audioQueue, NO);
+  AudioQueueStop(audioQueue, YES);
 }
 
-- (id<ANWaveGenerator>)addWave:(float)frequency {
-  ANSineGenerator * gen = [[ANSineGenerator alloc] initWithSampleCount:framesPerBuffer
-                                                                  rate:sampleRate
-                                                             frequency:frequency];
-  
+- (id<ANWaveGenerator>)addWave:(id<ANWaveGenerator>)gen {
   NSTimeInterval now = [[NSDate date] timeIntervalSinceReferenceDate];
   [adder fillForTime:now - lastTime];
   lastTime = now;
   
   [adder addGenerator:gen];
   return gen;
+}
+
+- (id<ANWaveGenerator>)makeWave:(float)frequency {
+  return [[ANSineGenerator alloc] initWithSampleCount:framesPerBuffer
+                                                 rate:sampleRate
+                                            frequency:frequency];
 }
 
 - (void)removeWave:(id<ANWaveGenerator>)gen {

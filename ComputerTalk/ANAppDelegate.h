@@ -7,15 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "ANSoundWaveEmitter.h"
-#import "ANSineGenerator.h"
-#import "ANSoundWaveReceiver.h"
 
-@interface ANAppDelegate : NSObject <NSApplicationDelegate> {
-  ANSoundWaveEmitter * gen;
-  ANSoundWaveReceiver * rec;
-}
+@interface ANAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow * window;
+- (IBAction)newXfer:(id)sender;
 
 @end

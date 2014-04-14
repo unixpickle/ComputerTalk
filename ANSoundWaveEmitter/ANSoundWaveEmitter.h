@@ -26,7 +26,8 @@
 
 - (id)initWithSampleRate:(NSUInteger)rate bufferTime:(NSTimeInterval)aPeriod;
 
-- (id<ANWaveGenerator>)addWave:(float)frequency;
+- (id<ANWaveGenerator>)addWave:(id<ANWaveGenerator>)gen;
+- (id<ANWaveGenerator>)makeWave:(float)frequency;
 - (void)removeWave:(id<ANWaveGenerator>)gen;
 
 - (void)start;

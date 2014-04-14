@@ -38,8 +38,8 @@ static void _sample_callback(void * inUserData, AudioQueueRef inAQ, AudioQueueBu
       return nil;
     }
     
-    // figure out how many samples (aka frames) are in 0.1 seconds
-    float windowFrameSize = (float)rate * 0.1f;
+    // figure out how many samples (aka frames) are in a certain quantum
+    float windowFrameSize = (float)rate / kANSoundWaveReceiverPerSecond;
     windowLog = (int)log2f(windowFrameSize);
     framesPerWindow = 1 << windowLog;
     framesPerBuffer = framesPerWindow * kANSoundWaveReceiverWindowCount;
@@ -75,18 +75,17 @@ static void _sample_callback(void * inUserData, AudioQueueRef inAQ, AudioQueueBu
 
 - (void)stop {
   AudioQueueReset(audioQueue);
-  AudioQueueStop(audioQueue, NO);
+  AudioQueueStop(audioQueue, YES);
 }
 
 - (void)dealloc {
   vDSP_destroy_fftsetup(fftSetup);
-  for (int i = 0; i < 3; i++) {
+  for (int i = 0; i < kANSoundWaveReceiverBufferCount; i++) {
     AudioQueueFreeBuffer(audioQueue, buffers[i]);
   }
-  AudioQueueDispose(audioQueue, YES);
+  AudioQueueDispose(audioQueue, NO);
   free(input.imagp);
   free(input.realp);
-  vDSP_destroy_fftsetup(fftSetup);
 }
 
 #pragma mark - Private -
@@ -121,7 +120,6 @@ static void _sample_callback(void * inUserData, AudioQueueRef inAQ, AudioQueueBu
 @end
 
 static void _sample_callback(void * inUserData, AudioQueueRef inAQ, AudioQueueBufferRef inBuffer, const AudioTimeStamp * inStartTime, UInt32 inNumberPacketDescriptions, const AudioStreamPacketDescription * inPacketDescs) {
-  NSLog(@"packets %u", inNumberPacketDescriptions);
   ANSoundWaveReceiver * recv = (__bridge ANSoundWaveReceiver *)inUserData;
   [recv bufferDone:inBuffer count:inNumberPacketDescriptions];
 }

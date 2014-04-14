@@ -49,7 +49,9 @@
 }
 
 - (void)removeGenerator:(id<ANWaveGenerator>)gen {
-  [waves removeObject:gen];
+  if ([waves containsObject:gen]) {
+    [waves removeObject:gen];
+  }
 }
 
 - (const Float32 *)buffer {
