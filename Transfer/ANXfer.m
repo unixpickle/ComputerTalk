@@ -24,7 +24,7 @@
                  recFreq:(float)rFreq {
   if ((self = [super init])) {
     sampleRate = aRate;
-    cbPerSecond = MIN(60, (int)(sFreq / 15.0));
+    cbPerSecond = MIN(MIN(60, (int)(sFreq / 15.0)), (int)(rFreq / 15.0));
     bitDuration = 3.0f / (float)cbPerSecond;
     
     float windowFrameSize = (float)aRate / (float)cbPerSecond;
@@ -138,7 +138,7 @@
     if (self.drainCallback) self.drainCallback();
     return;
   }
-  NSNumber * val = [bitBuffer firstObject];
+  NSNumber * val = [bitBuffer objectAtIndex:0];
   [bitBuffer removeObjectAtIndex:0];
     
   [emitter removeWave:sendRest];

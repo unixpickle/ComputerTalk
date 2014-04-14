@@ -38,6 +38,16 @@
                ReferencedContainer = "container:ComputerTalk.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FAC8D14418FB642400C1B64D"
+               BuildableName = "iComputerTalkTests.xctest"
+               BlueprintName = "iComputerTalkTests"
+               ReferencedContainer = "container:ComputerTalk.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

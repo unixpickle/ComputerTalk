@@ -9,9 +9,24 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>iComputerTalk.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>FAC8D12518FB642400C1B64D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FAC8D14418FB642400C1B64D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>FAD0ADBD18F99337007FBC25</key>
 		<dict>
 			<key>primary</key>

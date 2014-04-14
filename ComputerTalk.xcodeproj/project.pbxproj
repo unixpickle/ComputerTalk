@@ -13,6 +13,21 @@
 		FAC8D11C18FB52CA00C1B64D /* ANXferWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8D11A18FB52CA00C1B64D /* ANXferWindow.m */; };
 		FAC8D11D18FB52CA00C1B64D /* ANXferWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC8D11B18FB52CA00C1B64D /* ANXferWindow.xib */; };
 		FAC8D12118FB54C600C1B64D /* ANXfer.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8D12018FB54C600C1B64D /* ANXfer.m */; };
+		FAC8D12818FB642400C1B64D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC8D12718FB642400C1B64D /* Foundation.framework */; };
+		FAC8D12A18FB642400C1B64D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC8D12918FB642400C1B64D /* CoreGraphics.framework */; };
+		FAC8D12C18FB642400C1B64D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC8D12B18FB642400C1B64D /* UIKit.framework */; };
+		FAC8D13218FB642400C1B64D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAC8D13018FB642400C1B64D /* InfoPlist.strings */; };
+		FAC8D13418FB642400C1B64D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8D13318FB642400C1B64D /* main.m */; };
+		FAC8D13818FB642400C1B64D /* ANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8D13718FB642400C1B64D /* ANAppDelegate.m */; };
+		FAC8D13B18FB642400C1B64D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC8D13918FB642400C1B64D /* Main.storyboard */; };
+		FAC8D13E18FB642400C1B64D /* ANViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8D13D18FB642400C1B64D /* ANViewController.m */; };
+		FAC8D14018FB642400C1B64D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC8D13F18FB642400C1B64D /* Images.xcassets */; };
+		FAC8D15A18FB653500C1B64D /* ANSoundWaveEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD0ADF718F993AF007FBC25 /* ANSoundWaveEmitter.m */; };
+		FAC8D15B18FB653700C1B64D /* ANWaveAdder.m in Sources */ = {isa = PBXBuildFile; fileRef = FA40A98318F9ED2E00B720BF /* ANWaveAdder.m */; };
+		FAC8D15C18FB653900C1B64D /* ANSineGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD0ADFC18F998F6007FBC25 /* ANSineGenerator.m */; };
+		FAC8D15D18FB653D00C1B64D /* ANSoundWaveReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = FA40A98718F9F14500B720BF /* ANSoundWaveReceiver.m */; };
+		FAC8D15E18FB653F00C1B64D /* ANFrequencyTable.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8D10218FB228500C1B64D /* ANFrequencyTable.m */; };
+		FAC8D15F18FB654300C1B64D /* ANXfer.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8D12018FB54C600C1B64D /* ANXfer.m */; };
 		FAD0ADC218F99337007FBC25 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD0ADC118F99337007FBC25 /* Cocoa.framework */; };
 		FAD0ADCC18F99337007FBC25 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAD0ADCA18F99337007FBC25 /* InfoPlist.strings */; };
 		FAD0ADCE18F99337007FBC25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD0ADCD18F99337007FBC25 /* main.m */; };
@@ -39,6 +54,20 @@
 		FAC8D11B18FB52CA00C1B64D /* ANXferWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ANXferWindow.xib; sourceTree = "<group>"; };
 		FAC8D11F18FB54C600C1B64D /* ANXfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANXfer.h; sourceTree = "<group>"; };
 		FAC8D12018FB54C600C1B64D /* ANXfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANXfer.m; sourceTree = "<group>"; };
+		FAC8D12618FB642400C1B64D /* iComputerTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iComputerTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC8D12718FB642400C1B64D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FAC8D12918FB642400C1B64D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FAC8D12B18FB642400C1B64D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		FAC8D12F18FB642400C1B64D /* iComputerTalk-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iComputerTalk-Info.plist"; sourceTree = "<group>"; };
+		FAC8D13118FB642400C1B64D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FAC8D13318FB642400C1B64D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAC8D13518FB642400C1B64D /* iComputerTalk-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iComputerTalk-Prefix.pch"; sourceTree = "<group>"; };
+		FAC8D13618FB642400C1B64D /* ANAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANAppDelegate.h; sourceTree = "<group>"; };
+		FAC8D13718FB642400C1B64D /* ANAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANAppDelegate.m; sourceTree = "<group>"; };
+		FAC8D13A18FB642400C1B64D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAC8D13C18FB642400C1B64D /* ANViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANViewController.h; sourceTree = "<group>"; };
+		FAC8D13D18FB642400C1B64D /* ANViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANViewController.m; sourceTree = "<group>"; };
+		FAC8D13F18FB642400C1B64D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FAD0ADBE18F99337007FBC25 /* ComputerTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComputerTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD0ADC118F99337007FBC25 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FAD0ADC418F99337007FBC25 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -63,6 +92,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FAC8D12318FB642400C1B64D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC8D12A18FB642400C1B64D /* CoreGraphics.framework in Frameworks */,
+				FAC8D12C18FB642400C1B64D /* UIKit.framework in Frameworks */,
+				FAC8D12818FB642400C1B64D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAD0ADBB18F99337007FBC25 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -96,6 +135,31 @@
 			path = Transfer;
 			sourceTree = "<group>";
 		};
+		FAC8D12D18FB642400C1B64D /* iComputerTalk */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8D13618FB642400C1B64D /* ANAppDelegate.h */,
+				FAC8D13718FB642400C1B64D /* ANAppDelegate.m */,
+				FAC8D13918FB642400C1B64D /* Main.storyboard */,
+				FAC8D13C18FB642400C1B64D /* ANViewController.h */,
+				FAC8D13D18FB642400C1B64D /* ANViewController.m */,
+				FAC8D13F18FB642400C1B64D /* Images.xcassets */,
+				FAC8D12E18FB642400C1B64D /* Supporting Files */,
+			);
+			path = iComputerTalk;
+			sourceTree = "<group>";
+		};
+		FAC8D12E18FB642400C1B64D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8D12F18FB642400C1B64D /* iComputerTalk-Info.plist */,
+				FAC8D13018FB642400C1B64D /* InfoPlist.strings */,
+				FAC8D13318FB642400C1B64D /* main.m */,
+				FAC8D13518FB642400C1B64D /* iComputerTalk-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		FAD0ADB518F99336007FBC25 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +167,7 @@
 				FA40A98518F9F13B00B720BF /* ANSoundWaveReceiver */,
 				FAD0ADF518F99357007FBC25 /* ANSoundWaveEmitter */,
 				FAD0ADC718F99337007FBC25 /* ComputerTalk */,
+				FAC8D12D18FB642400C1B64D /* iComputerTalk */,
 				FAD0ADC018F99337007FBC25 /* Frameworks */,
 				FAD0ADBF18F99337007FBC25 /* Products */,
 			);
@@ -112,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				FAD0ADBE18F99337007FBC25 /* ComputerTalk.app */,
+				FAC8D12618FB642400C1B64D /* iComputerTalk.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +189,9 @@
 				FAD0ADF918F993CD007FBC25 /* AudioToolbox.framework */,
 				FAD0ADC118F99337007FBC25 /* Cocoa.framework */,
 				FAD0ADE018F99337007FBC25 /* XCTest.framework */,
+				FAC8D12718FB642400C1B64D /* Foundation.framework */,
+				FAC8D12918FB642400C1B64D /* CoreGraphics.framework */,
+				FAC8D12B18FB642400C1B64D /* UIKit.framework */,
 				FAD0ADC318F99337007FBC25 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -182,6 +251,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FAC8D12518FB642400C1B64D /* iComputerTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC8D15318FB642500C1B64D /* Build configuration list for PBXNativeTarget "iComputerTalk" */;
+			buildPhases = (
+				FAC8D12218FB642400C1B64D /* Sources */,
+				FAC8D12318FB642400C1B64D /* Frameworks */,
+				FAC8D12418FB642400C1B64D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iComputerTalk;
+			productName = iComputerTalk;
+			productReference = FAC8D12618FB642400C1B64D /* iComputerTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
 		FAD0ADBD18F99337007FBC25 /* ComputerTalk */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAD0ADEF18F99337007FBC25 /* Build configuration list for PBXNativeTarget "ComputerTalk" */;
@@ -223,11 +309,22 @@
 			projectRoot = "";
 			targets = (
 				FAD0ADBD18F99337007FBC25 /* ComputerTalk */,
+				FAC8D12518FB642400C1B64D /* iComputerTalk */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FAC8D12418FB642400C1B64D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC8D14018FB642400C1B64D /* Images.xcassets in Resources */,
+				FAC8D13218FB642400C1B64D /* InfoPlist.strings in Resources */,
+				FAC8D13B18FB642400C1B64D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAD0ADBC18F99337007FBC25 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -243,6 +340,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FAC8D12218FB642400C1B64D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC8D13418FB642400C1B64D /* main.m in Sources */,
+				FAC8D13E18FB642400C1B64D /* ANViewController.m in Sources */,
+				FAC8D13818FB642400C1B64D /* ANAppDelegate.m in Sources */,
+				FAC8D15A18FB653500C1B64D /* ANSoundWaveEmitter.m in Sources */,
+				FAC8D15B18FB653700C1B64D /* ANWaveAdder.m in Sources */,
+				FAC8D15C18FB653900C1B64D /* ANSineGenerator.m in Sources */,
+				FAC8D15D18FB653D00C1B64D /* ANSoundWaveReceiver.m in Sources */,
+				FAC8D15E18FB653F00C1B64D /* ANFrequencyTable.m in Sources */,
+				FAC8D15F18FB654300C1B64D /* ANXfer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAD0ADBA18F99337007FBC25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,6 +375,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		FAC8D13018FB642400C1B64D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAC8D13118FB642400C1B64D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FAC8D13918FB642400C1B64D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAC8D13A18FB642400C1B64D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		FAD0ADCA18F99337007FBC25 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,6 +418,55 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FAC8D15418FB642500C1B64D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iComputerTalk/iComputerTalk-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iComputerTalk/iComputerTalk-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FAC8D15518FB642500C1B64D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iComputerTalk/iComputerTalk-Prefix.pch";
+				INFOPLIST_FILE = "iComputerTalk/iComputerTalk-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		FAD0ADED18F99337007FBC25 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -365,7 +543,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ComputerTalk/ComputerTalk-Prefix.pch";
 				INFOPLIST_FILE = "ComputerTalk/ComputerTalk-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -378,7 +558,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ComputerTalk/ComputerTalk-Prefix.pch";
 				INFOPLIST_FILE = "ComputerTalk/ComputerTalk-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -386,6 +568,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FAC8D15318FB642500C1B64D /* Build configuration list for PBXNativeTarget "iComputerTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC8D15418FB642500C1B64D /* Debug */,
+				FAC8D15518FB642500C1B64D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		FAD0ADB918F99336007FBC25 /* Build configuration list for PBXProject "ComputerTalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

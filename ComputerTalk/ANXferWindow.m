@@ -40,6 +40,7 @@ static NSMutableArray * xferWindows = nil;
     if (!xfer) {
       NSRunAlertPanel(@"Invalid settings", @"Failed to create a new transfer session",
                       @"OK", nil, nil);
+      return;
     }
     [xfer start];
     __weak id weakSelf = self;
